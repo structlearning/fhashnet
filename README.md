@@ -17,7 +17,7 @@ Please download files from https://rebrand.ly/fhash and place in the current fol
 This contains the original datasets, dataset splits, trained models and other intermediate data dumps for reproducing tables and plots.  
 
 
-## Run Eperiments
+## Run Experiments
 
 The command lines and scripts used for training models are listed commands.txt.   
 Command lines specify the exact hyperparameter settings used to train the models.   
