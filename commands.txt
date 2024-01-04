@@ -1,0 +1,92 @@
+##########################################
+Embedding training for Cosine Similarity
+#########################################
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSNBC --TASK SymScore --MARGIN 0.1 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU  --SKEW=3
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSNBC --TASK SymScore --MARGIN 1.0 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU  --SKEW=3
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSNBC --TASK SymScore --MARGIN 0.1 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU  --SKEW=4
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSNBC --TASK SymScore --MARGIN 1.0 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU  --SKEW=4
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSWEB --TASK SymScore --MARGIN 0.1 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU  --SKEW=0
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSWEB --TASK SymScore --MARGIN 1.0 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU  --SKEW=0
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSWEB --TASK SymScore --MARGIN 0.1 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU  --SKEW=1
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSWEB --TASK SymScore --MARGIN 1.0 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU  --SKEW=1
+
+###################################
+Embedding training for Asym
+###################################
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSNBC --TASK SigmoidAsymScore --MARGIN 0.1 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU  --SKEW=3
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSNBC --TASK SigmoidAsymScore --MARGIN 1.0 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU  --SKEW=3
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSNBC --TASK SigmoidAsymScore --MARGIN 0.1 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU  --SKEW=4
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSNBC --TASK SigmoidAsymScore --MARGIN 1.0 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU  --SKEW=4
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSWEB --TASK SigmoidAsymScore --MARGIN 0.1 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU  --SKEW=0
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSWEB --TASK SigmoidAsymScore --MARGIN 1.0 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU  --SKEW=0
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSWEB --TASK SigmoidAsymScore --MARGIN 0.1 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU  --SKEW=1
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSWEB --TASK SigmoidAsymScore --MARGIN 1.0 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU  --SKEW=1
+
+
+###################################
+Embedding training for DotProduct
+###################################
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSNBC --TASK DotProduct --MARGIN 1.0 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU --SKEW=3 
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSNBC --TASK DotProduct --MARGIN 0.1 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU --SKEW=3 
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSNBC --TASK DotProduct --MARGIN 1.0 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU --SKEW=4 
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSNBC --TASK DotProduct --MARGIN 0.1 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU --SKEW=4 
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSWEB --TASK DotProduct --MARGIN 1.0 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU --SKEW=0 
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSWEB --TASK DotProduct --MARGIN 0.1 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU --SKEW=0 
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSWEB --TASK DotProduct --MARGIN 1.0 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU --SKEW=1 
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSWEB --TASK DotProduct --MARGIN 0.1 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU --SKEW=1 
+
+
+########################################
+Embedding training for WeightedJaccard
+########################################
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSNBC --TASK WeightedJaccard --MARGIN 1.0 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU --SKEW=3 
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSNBC --TASK WeightedJaccard --MARGIN 0.1 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU --SKEW=3
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSNBC --TASK WeightedJaccard --MARGIN 1.0 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU --SKEW=4 
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSNBC --TASK WeightedJaccard --MARGIN 0.1 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU --SKEW=4
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSWEB --TASK WeightedJaccard --MARGIN 1.0 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU --SKEW=0 
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSWEB --TASK WeightedJaccard --MARGIN 0.1 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU --SKEW=0
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSWEB --TASK WeightedJaccard --MARGIN 1.0 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU --SKEW=1 
+python -m src.msweb_data_generator_and_trainer --DATASET_NAME MSWEB --TASK WeightedJaccard --MARGIN 0.1 --CUDA 0 --MAX_QUERIES 100 --NUM_QUERIES 500 --LEARNING_RATE 1e-3 --LOSS relu --BATCH_SIZE 1024 --P2N 1.0 --DEEPSET_VER UA --ES 50 --EmbedType Bert768 --IN_HIDDEN_LAYERS 294 --OUT_HIDDEN_LAYERS  --IN_RELU --SKEW=1
+
+
+
+##################################################################
+Transformed Fourier representation  training for all 4 datasets
+##################################################################
+CUDA_VISIBLE_DEVICES=3 python -m src.fmap_trainer --DATASET_NAME="msweb294" --m_use=10 --m_load=2940 --embed_dim=294 --T=3 --SCALE=1 --tr_fmap_dim=10 --FMAP_HIDDEN_LAYERS --HIDDEN_LAYERS --TASK="sighinge" --HASH_MODE="fhash" --ES=50 --USE_FMAP_BCE3  --FMAP_LOSS_TYPE="AsymFmapCos" --MARGIN=0.05 --pickle_fp="" --FMAP_SELECT=-1 --SPECIAL_FHASH=""
+CUDA_VISIBLE_DEVICES=3 python -m src.fmap_trainer --DATASET_NAME="msweb294_1" --m_use=10 --m_load=2940 --embed_dim=294 --T=3 --SCALE=1 --tr_fmap_dim=10 --FMAP_HIDDEN_LAYERS --HIDDEN_LAYERS --TASK="sighinge" --HASH_MODE="fhash" --ES=50 --USE_FMAP_BCE3  --FMAP_LOSS_TYPE="AsymFmapCos" --MARGIN=0.05 --pickle_fp="" --FMAP_SELECT=-1 --SPECIAL_FHASH=""
+CUDA_VISIBLE_DEVICES=3 python -m src.fmap_trainer --DATASET_NAME="msnbc294_3" --m_use=10 --m_load=2940 --embed_dim=294 --T=3 --SCALE=1 --tr_fmap_dim=10 --FMAP_HIDDEN_LAYERS --HIDDEN_LAYERS --TASK="sighinge" --HASH_MODE="fhash" --ES=50 --USE_FMAP_BCE3  --FMAP_LOSS_TYPE="AsymFmapCos" --MARGIN=0.05 --pickle_fp="" --FMAP_SELECT=-1 --SPECIAL_FHASH=""
+CUDA_VISIBLE_DEVICES=3 python -m src.fmap_trainer --DATASET_NAME="msnbc294_4" --m_use=10 --m_load=2940 --embed_dim=294 --T=3 --SCALE=1 --tr_fmap_dim=10 --FMAP_HIDDEN_LAYERS --HIDDEN_LAYERS --TASK="sighinge" --HASH_MODE="fhash" --ES=50 --USE_FMAP_BCE3  --FMAP_LOSS_TYPE="AsymFmapCos" --MARGIN=0.05 --pickle_fp="" --FMAP_SELECT=-1 --SPECIAL_FHASH=""
+
+###########################
+Hashcode Training for fhash
+###########################
+Use scripts/hashcode_training_fhash.py
+
+
+#################################
+Hashcode Training for cosine/dot
+#################################
+Use scripts/hashcode_training_baselines.py
+
+
+#################################
+Hashing for cosine/dot
+#################################
+Use scripts/hashing_baselines.py
+
+
+#################################
+Hashing for fhash
+#################################
+Use scripts/hashing_fhash.py
+
+
+#################################
+Hashing for wjac
+#################################
+Use scripts/hashing_wmh.py
+
+
+
+
