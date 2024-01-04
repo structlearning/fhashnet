@@ -22,7 +22,7 @@ This contains the original datasets, dataset splits, trained models and other in
 The command lines and scripts used for training models are listed commands.txt.   
 Command lines specify the exact hyperparameter settings used to train the models.   
 
-#Reproduce plots and figures  
+## Reproduce plots and figures  
 
 FinalSubmission-Figs-NeurIPS23-Main.ipynb and FinalSubmission-Figs-NeurIPS23-Supp.ipynb contains code used for generating all the figures presented in the paper (main and appendix respectively).   
 
